@@ -1,5 +1,7 @@
 #pragma once
 
+#include <chrono>
+#include <thread>
 #include <iostream>
 #include <GL/glew.h>
 #include "Buttons.hpp"
@@ -163,6 +165,7 @@ void Draw () {
 
     glfwSwapBuffers(EditorWindow);
     glfwPollEvents();
+    std::this_thread::sleep_for(std::chrono::milliseconds(10));
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
