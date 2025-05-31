@@ -1,2 +1,2 @@
-# Dedit
-A simple editor for linux
+# Detit
+Editor in OpenGl
